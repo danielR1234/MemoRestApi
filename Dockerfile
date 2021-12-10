@@ -15,7 +15,7 @@ RUN npm install --production
 COPY --from=builder /usr/app/dist ./dist
 
 COPY ormconfig.docker.json ./ormconfig.json
-COPY .env .
+
 
 EXPOSE 3001
 CMD node dist/index.js

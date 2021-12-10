@@ -76,7 +76,7 @@ const updateMemo = async (
 
       res.status(200).json(updateMemo.raw[0])
     } else {
-      res.status(404).json({ message: 'Post does not exist' })
+      res.status(404).json({ message: 'Memo does not exist' })
     }
   } catch (err) {
     res.status(404).json(err.message)
